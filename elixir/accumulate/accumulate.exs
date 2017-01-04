@@ -22,4 +22,5 @@ defmodule Accumulate do
 
   defp map([head | rest], fun, acc), do: map(rest, fun, acc ++ [fun.(head)])
   defp map([],  fun, acc), do: acc
+
 end
